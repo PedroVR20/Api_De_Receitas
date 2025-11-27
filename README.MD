@@ -59,7 +59,4 @@ Base: `/api/receitas`
 
 ---
 
-## Observações finais
 
-* A API já está estruturada com Controller → Service → Repository.
-* Se quiser, eu posso adicionar instruções para rodar os testes, exemplos de requests com `curl`, ou um `docker-compose.yml` pronto. Quer que eu gere isso agora?

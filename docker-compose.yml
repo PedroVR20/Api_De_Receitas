@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: api_receitas_postgres
+    environment:
+      POSTGRES_USER: Admin
+      POSTGRES_PASSWORD: Admin123
+      POSTGRES_DB: api_receitas_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - api-network
+
+ 
+
+volumes:
+  postgres_data:
+
+networks:
+  api-network:
